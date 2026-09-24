@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Transparent fallback if GitHub Pages serves main branch root directly
+      if (window.location.hostname.includes('github.io') && !window.location.pathname.includes('/docs')) {
+        var p = window.location.pathname;
+        if (!p.endsWith('/')) p += '/';
+        window.location.replace(p + 'docs/');
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2306b6d4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polygon points='12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2'/><line x1='12' y1='22' x2='12' y2='15.5'/><polyline points='22 8.5 12 15.5 2 8.5'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="FORTIVEXA - Predictive Analytics Framework for Cybercrime Complaints (TRL 3 Experimental Proof-of-Concept)" />
+    <title>FORTIVEXA | Cybercrime Predictive Analytics Framework (TRL 3)</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Rajdhani:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  </head>
+  <body class="bg-navy-950 text-slate-100 font-sans antialiased selection:bg-cyan-500/30 selection:text-cyan-200 min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
